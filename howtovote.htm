@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNISA Voting Station</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="home.html">
+                <img src="logo.png" alt="UNISA Logo" class="navbar-logo" width="auto">
+            </a>
+
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vote.html">Vote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How to Vote</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn custom-btn text-white" style="width: 80px;margin-left: 17px;" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+<!-- Voting Tutorial Section -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-left mb-4" style="margin-top: 100px;">How to Vote</h2>
+            <p class="text-left">Follow the steps below to cast your vote successfully:</p>
+            
+            <!-- Step 1: Register or Log In -->
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Step 1: Register or Log In</h5>
+                    <p class="card-text">Make sure you're logged into your account or register if you're a new user. You'll need an active account to cast your vote.</p>
+                    <p class="card-text"><i class="bi bi-person-plus-fill text-primary"></i> <a href="login.html" class="text-decoration-none">Click here to Log In/Register</a></p>
+                </div>
+            </div>
+
+            <!-- Step 2: Choose an Election -->
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Step 2: Choose an Election</h5>
+                    <p class="card-text">Once you're logged in, select the election you wish to vote in from the available options. You can find a list of elections on the voting page.</p>
+                    <p class="card-text"><i class="bi bi-card-checklist text-primary"></i> <a href="vote.html" class="text-decoration-none">Go to Election Page</a></p>
+                </div>
+            </div>
+
+            <!-- Step 3: Cast Your Vote -->
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Step 3: Cast Your Vote</h5>
+                    <p class="card-text">Once you've selected an election, choose the candidate or party you want to vote for. Click the 'Vote' button to submit your vote.</p>
+                    <p class="card-text"><i class="bi bi-ballot text-success"></i> <a href="vote.html" class="text-decoration-none">Proceed to Vote</a></p>
+                </div>
+            </div>
+
+            <!-- Step 4: OTP Verification -->
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Step 4: OTP Verification</h5>
+                    <p class="card-text">After clicking the 'Vote' button, you will receive an OTP (One-Time Password) on your phone. Enter the OTP in the input field below to complete your voting process.</p>
+                    <p class="card-text"><i class="bi bi-shield-lock text-warning"></i> <strong>Entering  OTP</strong></p>
+                    
+                </div>
+            </div>
+
+            <!-- Step 5: Confirmation -->
+            <div class="card mb-3 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Step 5: Confirmation</h5>
+                    <p class="card-text">Once the correct OTP is entered, your vote will be confirmed. Thank you for participating in the election!</p>
+                    <p class="card-text"><i class="bi bi-check-circle-fill text-success"></i> Your vote has been successfully submitted.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
